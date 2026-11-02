@@ -6,7 +6,7 @@ A minimal home-screen widget for Android. Your **Today** and **This week** lists
 
 I only remember my tasks when I can see them. That's why this exists.
 
-[⬇️ Download the APK](https://github.com/agrani58/Always_In_Sight/releases/latest). No Play Store needed.
+[⬇️ Download the APK](https://github.com/agrani58/Always-In-Sight/releases/latest). No Play Store needed.
 
 ## What it does
 
@@ -28,7 +28,7 @@ I only remember my tasks when I can see them. That's why this exists.
 
 ## Install
 
-1. Download `Always_In_Sight-v1.0.0.apk` from the [Releases page](https://github.com/agrani58/Always_In_Sight/releases/latest)
+1. Download `Always_In_Sight-v1.0.0.apk` from the [Releases page](https://github.com/agrani58/Always-In-Sight/releases/latest)
 2. Open the APK. If Android asks, allow "Install unknown apps" for your browser or file manager
 3. Long-press your home screen → **Widgets** → find **Always In Sight** → drag it anywhere
 4. Tap it and start writing
