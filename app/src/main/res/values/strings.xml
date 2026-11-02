@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Always In Sight</string>
+    <string name="widget_desc">Your day and your week, in your own handwriting. Tap to write.</string>
+    <string name="today">Today</string>
+    <string name="week">This week</string>
+    <string name="pen">Pen</string>
+    <string name="eraser">Eraser</string>
+    <string name="undo">Undo</string>
+    <string name="clear">Clear</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_question">Clear \"%1$s\"?</string>
+    <string name="save_failed">Could not save your handwriting</string>
+</resources>

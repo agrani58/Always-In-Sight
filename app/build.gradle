@@ -1,0 +1,50 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Optional release signing: only used when these environment variables are set
+// (the GitHub Actions workflow sets them from repository secrets).
+// Without them, the release APK is signed with the standard debug key,
+// which is fine for installing and testing on your own devices.
+def ksFile = System.getenv('KEYSTORE_FILE')
+
+android {
+    namespace 'com.agrani.seeitdoit'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.agrani.seeitdoit'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    signingConfigs {
+        if (ksFile) {
+            release {
+                storeFile file(ksFile)
+                storePassword System.getenv('KEYSTORE_PASSWORD')
+                keyAlias System.getenv('KEY_ALIAS')
+                keyPassword System.getenv('KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig ksFile ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

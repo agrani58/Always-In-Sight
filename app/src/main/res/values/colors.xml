@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget glass fill. First two hex digits are transparency: 00 = invisible, FF = solid. -->
+    <color name="widget_bg">#80FFFFFF</color>
+    <!-- Dim layer behind the writing sheet -->
+    <color name="scrim">#99000000</color>
+</resources>
